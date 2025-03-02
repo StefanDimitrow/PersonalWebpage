@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / -1;
+    background-color: white;
+    height: 50px; /* Adjust the height as needed */
+}
+
+.navbar {
+    grid-column: 1 / -1;
+    background-color: white;
+    height: 50px; /* Adjust the height as needed */
+}
+
+.main {
+    grid-column: 1 / 2;
+    background-color: white;
+}
+
+.sidebar {
+    grid-column: 2 / 3;
+    background-color: white;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: white;
+    height: 50px; /* Adjust the height as needed */
+}
+
+.grid {
+    background-color: white;
+}
