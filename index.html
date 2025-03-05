@@ -22,6 +22,7 @@
         </div>
       </div>
       <div class="main grid">
+        <h2 class="main-heading">Projects</h2>
         <div class="loader">
           <div class="loader-bar"></div>
           <div class="loader-bar"></div>
@@ -29,7 +30,23 @@
           <div class="loader-bar"></div>
           <div class="loader-bar"></div>
         </div>
-        <div class="main-content">Main Content</div>
+        <div class="main-content">
+          <div class="project-card">
+            <button class="nav-arrow left-arrow" onclick="prevProject()">&#9664;</button>
+            <iframe src="https://lotrwiki-angular.web.app/home" class="project-preview" title="LoTR Wiki" scrolling="no"></iframe>
+            <div class="project-info">
+              <h3>Project 1</h3>
+              <p>Short description of Project 1.</p>
+              <a href="https://lotrwiki-angular.web.app/home" target="_blank" class="site-link">
+                <i class="fas fa-external-link-alt"></i> View Project
+              </a>
+              <a href="https://github.com/StefanDimitrow/Project1" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <button class="nav-arrow right-arrow" onclick="nextProject()">&#9654;</button>
+          </div>
+        </div>
       </div>
       <div class="sidebar grid">Sidebar</div>
       <div class="footer grid">
@@ -44,11 +61,6 @@
         </a>
       </div>
     </div>
-    <script>
-      setTimeout(() => {
-        document.querySelector(".main").classList.add("loaded");
-        document.querySelector(".main-content").classList.add("loaded");
-      }, 5000);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

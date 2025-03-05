@@ -50,6 +50,14 @@ body {
   position: relative;
 }
 
+.main-heading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ffcc; /* Neon green text color */
+}
+
 .main-content {
   filter: blur(5px);
   transition: filter 0.5s ease;
@@ -57,6 +65,98 @@ body {
 
 .main-content.loaded {
   filter: none;
+}
+
+.project-card {
+  background-color: #1a1a1a; /* Dark background */
+  border: 1px solid #00ffcc; /* Neon green border */
+  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+  width: 800px; /* Increased width */
+  height: 600px; /* Adjusted height */
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-preview {
+  width: 100%;
+  height: 300px; /* Adjusted height */
+  border: none;
+  overflow: hidden; /* Ensure no scrollbar */
+}
+
+.project-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.site-link {
+  color: #00ffcc; /* Neon green text color */
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-link i {
+  margin-right: 0.5rem;
+}
+
+.site-link:hover {
+  color: #00ff00; /* Change color on hover */
+}
+
+.github-link {
+  color: #00ffcc; /* Neon green text color */
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.github-link i {
+  margin-right: 0.5rem;
+}
+
+.github-link:hover {
+  color: #00ff00; /* Change color on hover */
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #00ffcc;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
 }
 
 .sidebar {
@@ -99,7 +199,7 @@ body {
 
 @keyframes typing {
   from { width: 0; }
-  to { width:43%; }
+  to { width: 50%; }
 }
 
 @keyframes blink-caret {
@@ -113,31 +213,26 @@ body {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
-  animation: typing 3.5s steps(40, end);
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
   animation-fill-mode: forwards; /* Ensure the text stays visible after typing */
-}
-
-.header .typing-effect::after {
-  content: "";
-  animation: blink-caret .75s step-end infinite;
-  animation-delay: 3.5s; /* Start blinking after typing is done */
 }
 
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 150px; /* Increased height */
   margin-bottom: 20px;
-  position: absolute;
+  position: absolute; /* Changed to absolute */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure the loader is above other content */
 }
 
 .loader-bar {
-  width: 10px;
-  height: 100%;
+  width: 15px; /* Increased width */
+  height: 100%; /* Adjusted height */
   margin: 0 5px;
   background: #00ff00;
   animation: loading 1s infinite;
