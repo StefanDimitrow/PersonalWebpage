@@ -4,17 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Stefan Dimitrov</title>
   </head>
   <body>
     <div class="mainContainer">
       <div class="header grid">
-        <div class="typing-effect">Hello and welcome to my personal webspace!</div>
+        <div class="typing-effect">
+          Hello and welcome to my personal webspace!
+        </div>
       </div>
-      <div class="main grid">Main Content</div>
+      <div class="main grid">
+        <div class="loader">
+          <div class="loader-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar"></div>
+          <div class="loader-bar"></div>
+        </div>
+        <div class="main-content">Main Content</div>
+      </div>
       <div class="sidebar grid">Sidebar</div>
-      <div class="footer grid">Footer</div>
+      <div class="footer grid">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/StefanDimitrow" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
     </div>
+    <script>
+      setTimeout(() => {
+        document.querySelector(".main").classList.add("loaded");
+        document.querySelector(".main-content").classList.add("loaded");
+      }, 5000);
+    </script>
   </body>
 </html>

@@ -43,6 +43,20 @@ body {
   background-color: #1a1a1a; /* Dark background */
   border: 1px solid #00ffcc; /* Neon green border */
   box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-content {
+  filter: blur(5px);
+  transition: filter 0.5s ease;
+}
+
+.main-content.loaded {
+  filter: none;
 }
 
 .sidebar {
@@ -64,6 +78,17 @@ body {
   color: #00ffcc; /* Neon green text color */
   background-color: #1a1a1a; /* Dark background */
   border-top: 2px solid #00ffcc; /* Neon green border */
+}
+
+.footer .social-icon {
+  color: #00ffcc; /* Neon green icon color */
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+  color: #00ff00; /* Change color on hover */
 }
 
 .grid {
@@ -96,4 +121,54 @@ body {
   content: "";
   animation: blink-caret .75s step-end infinite;
   animation-delay: 3.5s; /* Start blinking after typing is done */
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader-bar {
+  width: 10px;
+  height: 100%;
+  margin: 0 5px;
+  background: #00ff00;
+  animation: loading 1s infinite;
+  animation-iteration-count: 5; /* Run the animation 5 times */
+}
+
+.loader-bar:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader-bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes loading {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+}
+
+.main.loaded .loader {
+  display: none;
 }
