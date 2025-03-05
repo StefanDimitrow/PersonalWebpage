@@ -1,14 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #333;
-  font-family: Arial, sans-serif; 
+  background-color: #0d0d0d;
+  font-family: 'Orbitron', sans-serif; /* Use a futuristic font */
+  color: #00ffcc; /* Neon green text color */
 }
 
 .mainContainer {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   gap: 10px;
   height: 100vh;
   padding: 10px;
@@ -20,8 +21,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #00ffcc; /* Neon green text color */
   font-size: 1.5rem;
+  background-color: #1a1a1a; /* Dark background */
+  border-bottom: 2px solid #00ffcc; /* Neon green border */
 }
 
 .navbar {
@@ -35,16 +38,20 @@ body {
 
 .main {
   grid-column: 1 / 2;
-  color: #333;
+  color: #00ffcc; /* Neon green text color */
   padding: 1rem;
-  border: 1px soli;
+  background-color: #1a1a1a; /* Dark background */
+  border: 1px solid #00ffcc; /* Neon green border */
+  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
 }
 
 .sidebar {
   grid-column: 2 / 3;
-  color: #333;
+  color: #00ffcc; /* Neon green text color */
   padding: 1rem;
-  border: 1px solid #ddd;
+  background-color: #1a1a1a; /* Dark background */
+  border: 1px solid #00ffcc; /* Neon green border */
+  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
 }
 
 .footer {
@@ -54,8 +61,39 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  color: #00ffcc; /* Neon green text color */
+  background-color: #1a1a1a; /* Dark background */
+  border-top: 2px solid #00ffcc; /* Neon green border */
 }
 
 .grid {
-  border: 1px solid #ddd;
+  border: 1px solid #00ffcc; /* Neon green border */
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width:43%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #00ffcc; }
+}
+
+.header .typing-effect {
+  overflow: hidden;
+  border-right: .15em solid #00ffcc; /* Neon green caret */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(40, end);
+  animation-fill-mode: forwards; /* Ensure the text stays visible after typing */
+}
+
+.header .typing-effect::after {
+  content: "";
+  animation: blink-caret .75s step-end infinite;
+  animation-delay: 3.5s; /* Start blinking after typing is done */
 }
