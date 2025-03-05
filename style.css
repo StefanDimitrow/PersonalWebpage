@@ -20,8 +20,8 @@ body {
   height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #00ffcc; /* Neon green text color */
+  justify-content: center; /* Center the text horizontally */
+  color: #ff00ff; /* Neon pink text color */
   font-size: 1.5rem;
   background-color: #1a1a1a; /* Dark background */
   border-bottom: 2px solid #00ffcc; /* Neon green border */
@@ -55,7 +55,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #00ffcc; /* Neon green text color */
+  color: #ff00ff; /* Neon pink text color */
 }
 
 .main-content {
@@ -74,7 +74,7 @@ body {
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem;
-  width: 800px; /* Increased width */
+  width: 100%; /* Make width responsive */
   height: 600px; /* Adjusted height */
   text-align: center;
   transition: transform 0.3s ease;
@@ -166,6 +166,44 @@ body {
   background-color: #1a1a1a; /* Dark background */
   border: 1px solid #00ffcc; /* Neon green border */
   box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+}
+
+.sidebar h2, .sidebar h3 {
+  color: #ff00ff; /* Neon pink text color */
+}
+
+.sidebar a {
+  color: #569cd6; /* Visual Studio link color */
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #9cdcfe; /* Change color on hover */
+}
+
+.sidebar pre {
+  font-family: 'Courier New', Courier, monospace;
+  color: #d4d4d4; /* Visual Studio default text color */
+  font-size: 1.2rem; /* Increased font size */
+  white-space: pre-wrap; /* Ensure text wraps */
+  overflow: hidden; /* Hide overflow */
+  line-height: 1; /* Remove space between lines */
+}
+
+.sidebar pre code {
+  display: block;
+}
+
+.sidebar pre code span.keyword {
+  color: #569cd6; /* Visual Studio keyword color */
+}
+
+.sidebar pre code span.string {
+  color: #ce9178; /* Visual Studio string color */
+}
+
+.sidebar pre code span.variable {
+  color: #9cdcfe; /* Visual Studio variable color */
 }
 
 .footer {
@@ -266,4 +304,70 @@ body {
 
 .main.loaded .loader {
   display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 0; /* Remove padding from the body */
+  }
+
+  .mainContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    padding: 0; /* Remove padding from the main container */
+    margin: 0; /* Remove margin from the main container */
+  }
+
+  .header {
+    height: 2rem; /* Adjust header height for smaller screens */
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Add padding to the header */
+    margin: 0; /* Remove margin from the header */
+  }
+
+  .sidebar {
+    grid-column: 1 / -1; /* Make sidebar span full width */
+    grid-row: 2 / 3; /* Move sidebar above main content */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    margin: 0 0 0.5rem 0; /* Adjust margin to fit content */
+  }
+
+  .main {
+    grid-column: 1 / -1; /* Make main content span full width */
+    grid-row: 3 / 4;
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    margin: 0; /* Remove margin from the main content */
+  }
+
+  .footer {
+    grid-column: 1 / -1; /* Make footer span full width */
+    grid-row: 4 / 5; /* Ensure footer is under the project section */
+    height: 2rem; /* Adjust footer height for smaller screens */
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+    display: flex; /* Ensure footer is displayed */
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem; /* Add padding to the footer */
+    margin: 0.5rem 0 0 0; /* Adjust margin to fit content */
+  }
+
+  .project-card {
+    width: calc(100% - 1rem); /* Make project card full width with padding */
+    height: auto; /* Adjust height for smaller screens */
+    margin: 0.5rem auto; /* Center the project card and add margin */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .project-preview {
+    height: 100px; /* Adjust height for smaller screens */
+  }
+
+  .header .typing-effect,
+  .loader,
+  .loader-bar {
+    animation: none; /* Remove animations on smaller screens */
+  }
 }
