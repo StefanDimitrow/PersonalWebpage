@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0d0d0d;
-  font-family: 'Orbitron', sans-serif; /* Use a futuristic font */
-  color: #00ffcc; /* Neon green text color */
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
 }
 
 .mainContainer {
@@ -20,29 +20,20 @@ body {
   height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the text horizontally */
-  color: #ff00ff; /* Neon pink text color */
+  justify-content: center;
+  color: #ff00ff;
   font-size: 1.5rem;
-  background-color: #1a1a1a; /* Dark background */
-  border-bottom: 2px solid #00ffcc; /* Neon green border */
-}
-
-.navbar {
-  grid-column: 1 / -1;
-  height: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #00ffcc;
 }
 
 .main {
   grid-column: 1 / 2;
-  color: #00ffcc; /* Neon green text color */
+  color: #00ffcc;
   padding: 1rem;
-  background-color: #1a1a1a; /* Dark background */
-  border: 1px solid #00ffcc; /* Neon green border */
-  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +46,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #ff00ff; /* Neon pink text color */
+  color: #ff00ff;
 }
 
 .main-content {
@@ -68,14 +59,14 @@ body {
 }
 
 .project-card {
-  background-color: #1a1a1a; /* Dark background */
-  border: 1px solid #00ffcc; /* Neon green border */
-  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem;
-  width: 100%; /* Make width responsive */
-  height: 600px; /* Adjusted height */
+  width: 100%;
+  height: 600px;
   text-align: center;
   transition: transform 0.3s ease;
   position: relative;
@@ -90,9 +81,9 @@ body {
 
 .project-preview {
   width: 100%;
-  height: 300px; /* Adjusted height */
+  height: 300px;
   border: none;
-  overflow: hidden; /* Ensure no scrollbar */
+  overflow: hidden;
 }
 
 .project-info {
@@ -104,7 +95,7 @@ body {
 }
 
 .site-link {
-  color: #00ffcc; /* Neon green text color */
+  color: #00ffcc;
   text-decoration: none;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -118,11 +109,11 @@ body {
 }
 
 .site-link:hover {
-  color: #00ff00; /* Change color on hover */
+  color: #00ff00;
 }
 
 .github-link {
-  color: #00ffcc; /* Neon green text color */
+  color: #00ffcc;
   text-decoration: none;
   font-size: 1rem;
   display: flex;
@@ -137,7 +128,7 @@ body {
 }
 
 .github-link:hover {
-  color: #00ff00; /* Change color on hover */
+  color: #00ff00;
 }
 
 .nav-arrow {
@@ -161,33 +152,33 @@ body {
 
 .sidebar {
   grid-column: 2 / 3;
-  color: #00ffcc; /* Neon green text color */
+  color: #00ffcc;
   padding: 1rem;
-  background-color: #1a1a1a; /* Dark background */
-  border: 1px solid #00ffcc; /* Neon green border */
-  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
 }
 
 .sidebar h2, .sidebar h3 {
-  color: #ff00ff; /* Neon pink text color */
+  color: #ff00ff;
 }
 
 .sidebar a {
-  color: #569cd6; /* Visual Studio link color */
+  color: #569cd6;
   text-decoration: none;
 }
 
 .sidebar a:hover {
-  color: #9cdcfe; /* Change color on hover */
+  color: #9cdcfe;
 }
 
 .sidebar pre {
   font-family: 'Courier New', Courier, monospace;
-  color: #d4d4d4; /* Visual Studio default text color */
-  font-size: 1.2rem; /* Increased font size */
-  white-space: pre-wrap; /* Ensure text wraps */
-  overflow: hidden; /* Hide overflow */
-  line-height: 1; /* Remove space between lines */
+  color: #d4d4d4;
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  overflow: hidden;
+  line-height: 1;
 }
 
 .sidebar pre code {
@@ -195,15 +186,15 @@ body {
 }
 
 .sidebar pre code span.keyword {
-  color: #569cd6; /* Visual Studio keyword color */
+  color: #569cd6;
 }
 
 .sidebar pre code span.string {
-  color: #ce9178; /* Visual Studio string color */
+  color: #ce9178;
 }
 
 .sidebar pre code span.variable {
-  color: #9cdcfe; /* Visual Studio variable color */
+  color: #9cdcfe;
 }
 
 .footer {
@@ -213,26 +204,26 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  color: #00ffcc; /* Neon green text color */
-  background-color: #1a1a1a; /* Dark background */
-  border-top: 2px solid #00ffcc; /* Neon green border */
+  color: #00ffcc;
+  background-color: #1a1a1a;
+  border-top: 2px solid #00ffcc;
 }
 
 .footer .social-icon {
-  color: #00ffcc; /* Neon green icon color */
+  color: #00ffcc;
   margin: 0 10px;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .footer .social-icon:hover {
-  color: #00ff00; /* Change color on hover */
+  color: #00ff00;
 }
 
 .grid {
-  border: 1px solid #00ffcc; /* Neon green border */
+  border: 1px solid #00ffcc;
   border-radius: 1rem;
-  box-shadow: 0 0 10px #00ffcc; /* Neon green shadow */
+  box-shadow: 0 0 10px #00ffcc;
 }
 
 @keyframes typing {
@@ -247,34 +238,34 @@ body {
 
 .header .typing-effect {
   overflow: hidden;
-  border-right: .15em solid #00ffcc; /* Neon green caret */
+  border-right: .15em solid #00ffcc;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
   animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  animation-fill-mode: forwards; /* Ensure the text stays visible after typing */
+  animation-fill-mode: forwards;
 }
 
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px; /* Increased height */
+  height: 150px;
   margin-bottom: 20px;
-  position: absolute; /* Changed to absolute */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000; /* Ensure the loader is above other content */
+  z-index: 1000;
 }
 
 .loader-bar {
-  width: 15px; /* Increased width */
-  height: 100%; /* Adjusted height */
+  width: 15px;
+  height: 100%;
   margin: 0 5px;
   background: #00ff00;
   animation: loading 1s infinite;
-  animation-iteration-count: 5; /* Run the animation 5 times */
+  animation-iteration-count: 5;
 }
 
 .loader-bar:nth-child(1) {
@@ -308,66 +299,66 @@ body {
 
 @media (max-width: 600px) {
   body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    padding: 0; /* Remove padding from the body */
+    overflow-x: hidden;
+    padding: 0;
   }
 
   .mainContainer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
-    padding: 0; /* Remove padding from the main container */
-    margin: 0; /* Remove margin from the main container */
+    padding: 0;
+    margin: 0;
   }
 
   .header {
-    height: 2rem; /* Adjust header height for smaller screens */
-    font-size: 0.7rem; /* Adjust font size for smaller screens */
-    padding: 0.5rem; /* Add padding to the header */
-    margin: 0; /* Remove margin from the header */
+    height: 2rem;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    margin: 0;
   }
 
   .sidebar {
-    grid-column: 1 / -1; /* Make sidebar span full width */
-    grid-row: 2 / 3; /* Move sidebar above main content */
-    padding: 0.5rem; /* Adjust padding for smaller screens */
-    font-size: 0.7rem; /* Adjust font size for smaller screens */
-    margin: 0 0 0.5rem 0; /* Adjust margin to fit content */
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    margin: 0 0 0.5rem 0;
   }
 
   .main {
-    grid-column: 1 / -1; /* Make main content span full width */
+    grid-column: 1 / -1;
     grid-row: 3 / 4;
-    padding: 0.5rem; /* Adjust padding for smaller screens */
-    font-size: 0.7rem; /* Adjust font size for smaller screens */
-    margin: 0; /* Remove margin from the main content */
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    margin: 0;
   }
 
   .footer {
-    grid-column: 1 / -1; /* Make footer span full width */
-    grid-row: 4 / 5; /* Ensure footer is under the project section */
-    height: 2rem; /* Adjust footer height for smaller screens */
-    font-size: 0.7rem; /* Adjust font size for smaller screens */
-    display: flex; /* Ensure footer is displayed */
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    height: 2rem;
+    font-size: 0.7rem;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem; /* Add padding to the footer */
-    margin: 0.5rem 0 0 0; /* Adjust margin to fit content */
+    padding: 0.5rem;
+    margin: 0.5rem 0 0 0;
   }
 
   .project-card {
-    width: calc(100% - 1rem); /* Make project card full width with padding */
-    height: auto; /* Adjust height for smaller screens */
-    margin: 0.5rem auto; /* Center the project card and add margin */
-    padding: 0.5rem; /* Adjust padding for smaller screens */
+    width: calc(100% - 1rem);
+    height: auto;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
   }
 
   .project-preview {
-    height: 100px; /* Adjust height for smaller screens */
+    height: 100px;
   }
 
   .header .typing-effect,
   .loader,
   .loader-bar {
-    animation: none; /* Remove animations on smaller screens */
+    animation: none;
   }
 }

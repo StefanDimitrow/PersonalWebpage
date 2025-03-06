@@ -13,7 +13,7 @@ const projects = [
     github: "https://github.com/StefanDimitrow/HijaPogled.git",
     site: "https://hijapogled-634ba.web.app"
   }
-  // Add more projects as needed
+ 
 ];
 
 let currentProjectIndex = 0;
