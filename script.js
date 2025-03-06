@@ -12,7 +12,15 @@ const projects = [
     description: "This is a personal project for a guest house site.",
     github: "https://github.com/StefanDimitrow/HijaPogled.git",
     site: "https://hijapogled-634ba.web.app"
+  },
+  {
+    src: "https://trashpanda-8ff4f.firebaseapp.com",
+    title: "Trash Panda",
+    description: "A web app for finding and buying/selling unused items.",
+    github: "https://github.com/StefanDimitrow/Trashpanda.git",
+    site: "https://trashpanda-8ff4f.firebaseapp.com"
   }
+
  
 ];
 
